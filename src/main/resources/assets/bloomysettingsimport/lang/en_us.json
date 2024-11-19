@@ -1,0 +1,15 @@
+{
+  "settings.bloomysettingsimport.import_settings": "Import options.txt",
+  "settings.bloomysettingsimport.export_settings": "Export options.txt",
+  "settings.bloomysettingsimport.import_success": "Settings Import: SUCCESS!",
+  "settings.bloomysettingsimport.import_failed": "Settings Import: FAILED! Please Enter A Proper options.txt File!",
+  "settings.bloomysettingsimport.open_explorer": "Open File Explorer",
+  "settings.bloomysettingsimport.example_dir": "Enter your file directory to save to/load from!",
+  "settings.bloomysettingsimport.replace_dupes": "Replace Duplicate",
+  "settings.bloomysettingsimport.export_success": "Settings Export: SUCCESS!",
+  "settings.bloomysettingsimport.export_failed": "Settings Export: FAILED!",
+  "settings.bloomysettingsimport.create_dir": "Create Directory",
+  "settings.bloomysettingsimport.file_already_exists": "Settings Export: FAILED! There already exists an options.txt file!",
+  "settings.bloomysettingsimport.exit_bsi": "Exit/Done",
+  "settings.bloomysettingsimport.enter_btn": "Settings Import/Export"
+}
