@@ -28,9 +28,10 @@ public abstract class OptionsMenuMixin extends Screen {
 
     @Inject(at = @At("RETURN"), method = "init")
     private void addImportButton(CallbackInfo ci) {
+
         this.addDrawableChild(
                 ButtonWidget.builder(Text.translatable("settings.bloomysettingsimport.enter_btn"), button -> this.client.setScreen(new importOptionsScreen(new importOptionsGui())))
-                        .dimensions( 5, 5, 150, 20)
+                        .dimensions( this.width - 155, 5, 150, 20)
                         .build()
         );
     }
