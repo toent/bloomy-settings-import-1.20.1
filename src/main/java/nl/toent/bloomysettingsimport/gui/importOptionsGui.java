@@ -50,7 +50,7 @@ public class importOptionsGui extends LightweightGuiDescription {
         importSettingsButton.setIcon(new ItemIcon(new ItemStack(Items.WRITABLE_BOOK)));
         root.add(importSettingsButton, 0, 4, 8, 1);
         importSettingsButton.setOnClick(() -> {
-            Path userInputtedPath = Path.of(pathDirectory.getText() + FileSystems.getDefault().getSeparator());
+            Path userInputtedPath = Path.of(pathDirectory.getText().replace("\"", "").replace("'", "") + FileSystems.getDefault().getSeparator());
             Path findOptions = userInputtedPath.resolve("options.txt");
             Path findOriginalOptions = FabricLoader.getInstance().getConfigDir().resolve(MinecraftClient.getInstance().options.getOptionsFile().toPath());
             try {
@@ -78,7 +78,7 @@ public class importOptionsGui extends LightweightGuiDescription {
         exportSettingsButton.setIcon(new ItemIcon(new ItemStack(Items.WRITTEN_BOOK)));
         root.add(exportSettingsButton, 0, 6, 8, 1);
         exportSettingsButton.setOnClick(() -> {
-            Path userInputtedPath = Path.of(pathDirectory.getText());
+            Path userInputtedPath = Path.of(pathDirectory.getText().replace("\"", "").replace("'", ""));
             Path optionsToExport = FabricLoader.getInstance()
                     .getConfigDir()
                     .resolve(MinecraftClient.getInstance().options.getOptionsFile().toPath());

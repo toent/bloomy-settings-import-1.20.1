@@ -5,13 +5,13 @@
 	"name": "Bloomy Settings Import",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"toent!"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/bloomysettingsimport/icon.png",
 	"environment": "*",
 	"entrypoints": {
